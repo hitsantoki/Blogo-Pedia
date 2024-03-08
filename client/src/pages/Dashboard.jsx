@@ -4,6 +4,7 @@ import DashSidebar from '../components/DashSidebar';
 import DashProfile from '../components/DashProfile';
 import DashPosts from '../components/DashPosts';
 import DashUsers from '../components/DashUsers';
+
 export default function Dashboard() {
   const location = useLocation();
   const [tab, setTab] = useState('');
@@ -15,7 +16,7 @@ export default function Dashboard() {
     }
   }, [location.search]);
   return (
-    <div className="min-h-screen flex flex-col md:flex-row">
+    <div className='min-h-screen flex flex-col md:flex-row'>
       <div className='md:w-56'>
         {/* Sidebar */}
         <DashSidebar />
@@ -23,10 +24,9 @@ export default function Dashboard() {
       {/* profile... */}
       {tab === 'profile' && <DashProfile />}
       {/* posts... */}
-
-      {tab === 'posts' && <DashPosts/>}
+      {tab === 'posts' && <DashPosts />}
       {/* users */}
-      {tab==='users' && <DashUsers/>}
+      {tab === 'users' && <DashUsers />}
     </div>
   );
 }
