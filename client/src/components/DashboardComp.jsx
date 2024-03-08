@@ -93,7 +93,7 @@ export default function DashboardComp() {
                             </h3>
                             <p className='text-2xl'>{totalComments}</p>
                         </div>
-                        <HiAnnotation className='bg-indigo-600  text-white rounded-full text-5xl p-3 shadow-lg' />
+                        <HiAnnotation className='bg-rose-500  text-white rounded-full text-5xl p-3 shadow-lg' />
                     </div>
                     <div className='flex  gap-2 text-sm'>
                         <span className='text-green-500 flex items-center'>
