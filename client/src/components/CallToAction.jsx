@@ -11,7 +11,7 @@ export default function CallToAction() {
                     Checkout these resources of JavaScript
                 </p>
                 <Button gradientDuoTone='purpleToPink' className='rounded-tl-xl rounded-bl-none'>
-                    <a href="https://www.https://developer.mozilla.org/en-US/docs/Web/JavaScript .com" target='_blank' rel='noopener noreferrer'>
+                    <a href="https://www.https://developer.mozilla.org/en-US/docs/Web/JavaScript.com" target='_blank' rel='noopener noreferrer'>
                         JavaScript Tutorials
                     </a>
                 </Button>
