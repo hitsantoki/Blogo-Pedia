@@ -6,7 +6,7 @@ import authRoutes from "./routes/auth.route.js";
 import cookieParser from "cookie-parser";
 import postRoutes from "./routes/post.route.js";
 import commentRoutes from "./routes/comment.route.js";
-
+import cors from "cors";
 dotenv.config();
 
 mongoose
@@ -19,7 +19,15 @@ mongoose
   });
 
 const app = express();
+const corsOptions = {
+  origin: "http://localhost:5173", // The URL of your frontend application
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true, // Allow credentials (cookies, authorization headers, etc.)
+};
 
+// Apply CORS middleware
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(cookieParser());
 
